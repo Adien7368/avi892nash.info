@@ -1,5 +1,98 @@
 {% extends 'base_layout.html' %}
+{% load static from staticfiles %}
 
 {% block content %}
-<p>hello</p>
+<div class="modal-body row" >
+    <div class="col-md-4" style="padding-left: 10px; padding-right: 10px;">
+        <img src="{% static 'aviphoto.jpg' %}" alt="" style="width: 100%;">
+        <p>Name: Avinash Verma</p>
+        <p>Coder</p>
+        <p>Developer</p>
+        <p>Email: avihsan8922@gmail.com</p>
+        <p>Contact: (+91)8922003966</p>
+        <hr>
+        <p>Skills</p>
+        <p>C++</p>
+        <p>Python</p>
+        <p>C</p>
+        <p>Javascript</p>
+        <hr>
+        <p>Online Profiles</p>
+        <p>Codechef</p>
+        <p>Hackerearth</p>
+        <p>Codeforces</p>
+        <p>Github</p>
+        <hr>
+        <p>Tools</p>
+        <p>Codeblock</p>
+        <p>Somethings..</p>
+    </div>
+    <div class="col-md-8" style="padding-left: 10px; padding-right: 10px;" >
+        <div>
+            <h1>EDUCATION</h1>
+            <p> 
+                Kamla Nehru Institute of Technology, Sultanpur, — B.Tech 2nd year
+                <br>
+                2016 - 2020
+                <br>
+                Cumulative Percentage: 69.00%
+            </p>
+            <p>
+                Kendriya Vidhyalaya IIM Lucknow, — Intermediate
+                <br>
+                2016
+                <br>
+                Percentage: 87.2%    
+            </p>
+            <p>
+                Kendriya Vidhyalaya IIM Lucknow, — Secondary
+                <br>
+                2014
+                <br>
+                CGPA: 9.4    
+            </p>
+            <hr>
+            <h1>WORK EXPERIENCE</h1>
+            <p>
+                Codechef Campus KNIT Chapter, sultanpur — Executive
+                <br>
+                JAN 2017 - PRESENT
+                <br>
+                Teaching Algorithms, Data Structures in Java/Python.
+            </p>
+            <p>
+                Codigo 2k18.
+                <br>
+                November 2018
+                <br>
+                Problem setter at Annual Coding contest of KNIT Sultanpur held at Codechef(href).
+            </p>
+            <hr>
+            <h1>PROJECTS</h1> 
+            <p>
+                avi892nash.info : A website that contain all my projects and blogs.
+                <br>
+                Github
+            </p>
+            <p>
+                Codeforces API :  A website that use codeforces API and give desired result.
+                <br>
+                Github    
+            </p>
+            <p>
+                MozUI : A user interface framework that help developer to make website browser independent.
+                <br>
+                Github    
+            </p>
+            <hr>
+            <h1>ACHIEVEMENTS</h1>
+            <p>ACM-ICPC 2k19  Regional Kolkata-Kanpur (2018) (Team Rainbow) secured rank 39.</p>
+            <p>ACM-ICPC 2k18  Regional Kolkata-Kanpur (2017) (Team Rainbow) secured rank 92.</p>
+            <p>TCS Codevita 2018 Round 1 secured rank 41.</p>
+            <p>Rank 58 in “Semi Finale Code Gladiators 2018”(Link).</p>
+            <p>Rank 1 in Codechef contest “C cubed 2k18” by “Indian Institute of Space Science and Technology, Trivandrum” (Link).</p>
+            <p>Rank 2 in  Codechef contest “Codigo 2k17” by “Kamla Nehru Institute of Technology”(Link).</p>
+        </div>
+    </div>
+</div>
 {% endblock %}
