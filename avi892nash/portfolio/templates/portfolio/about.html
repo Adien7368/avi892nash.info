@@ -1,11 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>About Me</title>
-        <link rel="stylesheet" href="{% static 'style.css' %}">
-    </head>
-    <body>
-        <p>hello</p>
-    </body>
-</html>
+{ % extends 'base_layout.html' % }
+
+{ % block content % }
+<p>hello</p>
+{ % endblock % }
