@@ -4,21 +4,28 @@
     <head>
         <title>About Me</title>
         <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="stylesheet" href="{% static 'footer-distributed-with-contact-form.css' %}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-static-top">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">HomePage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home/">HomePage</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">About Me</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/about/">About Me</a></li>
                 </ul>
             </nav>
         </header>
-        <footer>
-            <footer class="footer-distributed">
+    </head>
+    <body>
+        <div class="wrapper container" style="max-width: 100%">
+        {% block content %}
+        {% endblock %}
+        </div>
 
-			<div class="footer-left">
+        <footer class="footer-distributed">
+            
+            <div class="footer-left">
 
 				<h3>Company<span>logo</span></h3>
 
@@ -63,50 +70,6 @@
 
 			</div>
 
-        <footer class="footer-distributed">
-
-            <div class="footer-left">
-    
-                <h3>Company<span>logo</span></h3>
-    
-                <p class="footer-links">
-                    <a href="#">Home</a>
-                    ·
-                    <a href="#">Blog</a>
-                    ·
-                    <a href="#">Pricing</a>
-                    ·
-                    <a href="#">About</a>
-                    ·
-                    <a href="#">Faq</a>
-                    ·
-                    <a href="#">Contact</a>
-                </p>
-    
-                <p class="footer-company-name">Company Name © 2015</p>
-    
-                <div class="footer-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
-                </div>
-            </div>
-    
-            <div class="footer-right">
-                <p>Contact Us</p>
-                <form action="#" method="post">
-                    <input type="text" name="email" placeholder="Email">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button>Send</button>
-                </form>
-            </div>
         </footer>
-    </head>
-    <body>
-        <div class="wrapper container" style="max-width: 100%">
-        {% block content %}
-        {% endblock %}
-        </div>
     </body>
 </html>
