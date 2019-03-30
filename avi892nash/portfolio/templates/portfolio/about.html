@@ -2,8 +2,9 @@
 {% load static from staticfiles %}
 
 {% block content %}
+
 <div class="modal-body row" >
-    <div class="shadow col-md-3 p-3 mx-2" >
+    <div class="shadow col-md-3 p-3 mr-2 ml-4 rounded" >
         <div id="profile-photo">
         <img class="rounded-circle mb-2" src="{% static 'aviphoto.jpg' %}" alt="" style="width: 100%;">
         </div>
@@ -29,9 +30,9 @@
         <p>Codeblock</p>
         <p>Somethings..</p>
     </div>
-    <div class="shadow col-md-8 p-3 mx-2">
-        <div>
-            <h1>EDUCATION</h1>
+    <div class="shadow col-md-8 ml-4 p-0">
+        <h1 class="text-white bg-dark p-3 rounded">EDUCATION</h1>
+        <div class="p-3">
             <p> 
                 Kamla Nehru Institute of Technology, Sultanpur, — B.Tech 2nd year
                 <br>
@@ -53,8 +54,9 @@
                 <br>
                 CGPA: 9.4    
             </p>
-            <hr>
-            <h1>WORK EXPERIENCE</h1>
+        </div> 
+        <h1 class="text-white bg-dark p-3 rounded">WORK EXPERIENCE</h1>
+        <div class="p-3">    
             <p>
                 Codechef Campus KNIT Chapter, sultanpur — Executive
                 <br>
@@ -69,8 +71,9 @@
                 <br>
                 Problem setter at Annual Coding contest of KNIT Sultanpur held at Codechef(href).
             </p>
-            <hr>
-            <h1>PROJECTS</h1> 
+        </div>   
+        <h1 class="text-white bg-dark p-3 rounded">PROJECTS</h1> 
+        <div class="p-3">    
             <p>
                 avi892nash.info : A website that contain all my projects and blogs.
                 <br>
@@ -86,15 +89,16 @@
                 <br>
                 Github    
             </p>
-            <hr>
-            <h1>ACHIEVEMENTS</h1>
+        </div>
+        <h1 class="text-white bg-dark p-3 rounded">ACHIEVEMENTS</h1>
+        <div class="p-3">
             <p>ACM-ICPC 2k19  Regional Kolkata-Kanpur (2018) (Team Rainbow) secured rank 39.</p>
             <p>ACM-ICPC 2k18  Regional Kolkata-Kanpur (2017) (Team Rainbow) secured rank 92.</p>
             <p>TCS Codevita 2018 Round 1 secured rank 41.</p>
             <p>Rank 58 in “Semi Finale Code Gladiators 2018”(Link).</p>
             <p>Rank 1 in Codechef contest “C cubed 2k18” by “Indian Institute of Space Science and Technology, Trivandrum” (Link).</p>
             <p>Rank 2 in  Codechef contest “Codigo 2k17” by “Kamla Nehru Institute of Technology”(Link).</p>
-        </div>
+    </div>
     </div>
 </div>
 {% endblock %}
